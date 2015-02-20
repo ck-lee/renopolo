@@ -1,0 +1,31 @@
+﻿<div id="register-view">
+    <section>
+        <h3>Register</h3>
+        <div class="content-container">
+            <div>
+                <label for="FullName">Full Name</label>
+                <input id="FullName" name="FullName" type="text" value="" data-bind="value:fullName" />
+                <span class="field-validation-valid" data-bind="css : {'field-validation-valid': fullName.isValid(), 'field-validation-error' : !fullName.isValid() }, text: fullName.validationMessage"></span>
+            </div>
+            <div>
+                <label for="Email">E-mail</label>
+                <input id="Email" name="Email" type="text" value="" data-bind="value:email" />
+                <span class="field-validation-valid" data-bind="css : {'field-validation-valid': email.isValid(), 'field-validation-error' : !email.isValid() }, text: email.validationMessage"></span>
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input id="Password" name="Password" type="password" value="" data-bind="value:password" />
+                <span class="field-validation-valid" data-bind="css : {'field-validation-valid': password.isValid(), 'field-validation-error' : !password.isValid() }, text: password.validationMessage"></span>
+            </div>
+            <div>
+                <label for="ConfirmPassword">Confirm password</label>
+                <input id="ConfirmPassword" name="ConfirmPassword" type="password" value="" data-bind="value:confirmPassword" />
+                <span class="field-validation-valid" data-bind="css : {'field-validation-valid': confirmPassword.isValid(), 'field-validation-error' : !confirmPassword.isValid() }, text: confirmPassword.validationMessage"></span>
+            </div>
+            <div>
+                <a href="#" class="m-btn blue big animate-from-left register-button" data-bind="click:registerClicked, css : {disabled: isLoading}">Register<i class="m-icon-big-swapright m-icon-white"></i></a>
+                <span class="loading"  data-bind="visible:isLoading"></span>
+            </div>
+        </div>
+    </section>
+</div>

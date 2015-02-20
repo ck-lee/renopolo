@@ -1,0 +1,19 @@
+﻿<div id="login-view">
+    <h3>Sign In</h3>
+    <div data-role="fieldcontain">
+        <label for="Email">E-mail</label>
+        <input name="Email" id="Email" type="text" value="" data-bind="value:userName" />
+        <span class="field-validation-valid" data-bind="css : {'field-validation-valid': userName.isValid(), 'field-validation-error' : !userName.isValid() }, text: userName.validationMessage"></span>
+    </div>
+    <div data-role="fieldcontain">
+        <label for="Password">Password</label>
+        <input name="Password" id="Password" type="password" data-bind="value:password" />
+        <span class="field-validation-valid" data-bind="css : {'field-validation-valid': password.isValid(), 'field-validation-error' : !password.isValid() }, text: password.validationMessage"></span>
+    </div>
+    <input type="checkbox" name="RememberMe" value="true" id="RememberMe" data-bind="checked: rememberMe" />
+    <label for="RememberMe">Remember me?</label>
+    <div>
+        <a href="#" data-role="button" data-theme="b" data-bind="click:loginClicked, css : {disabled: isLoading}">Sign In</a>
+        <span class="loading"  data-bind="visible:isLoading"></span>
+    </div>
+</div>

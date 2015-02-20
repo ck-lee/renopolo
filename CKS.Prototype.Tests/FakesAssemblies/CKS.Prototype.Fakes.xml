@@ -1,0 +1,1583 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CKS.Prototype.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController">
+            <summary>Shim type of CKS.Prototype.Controllers.Api.AccountController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.#ctor(CKS.Prototype.Controllers.Api.AccountController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.Bind(System.Web.Http.Controllers.IHttpController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.ConstructorILoggerIWebSecurityIPrototypeUowHttpContextBase">
+            <summary>Sets the shim of AccountController.AccountController(ILogger logger, IWebSecurity webSecurity, IPrototypeUow prototypeUow, HttpContextBase context)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.GetFullNameString">
+            <summary>Sets the shim of AccountController.GetFullName(String email)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.GetLogin">
+            <summary>Sets the shim of AccountController.GetLogin()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.GetUniqueNumber">
+            <summary>Sets the shim of AccountController.GetUniqueNumber()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.LoginStringStringBoolean">
+            <summary>Sets the shim of AccountController.Login(String email, String password, Boolean rememberMe)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.PostCookieCookieRequest">
+            <summary>Sets the shim of AccountController.PostCookie(CookieRequest cookieRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.PostLoginLoginRequest">
+            <summary>Sets the shim of AccountController.PostLogin(LoginRequest loginRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.PostRegisterRegisterRequest">
+            <summary>Sets the shim of AccountController.PostRegister(RegisterRequest registerRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.PostSignOut">
+            <summary>Sets the shim of AccountController.PostSignOut()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.RandomStringInt32String">
+            <summary>Sets the shim of AccountController.RandomString(Int32 length, String allowedChars)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.SaveUserProfileToDatabaseStringStringString">
+            <summary>Sets the shim of AccountController.SaveUserProfileToDatabase(String email, String fullName, String companyName)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.GetFullNameString">
+            <summary>Sets the shim of AccountController.GetFullName(String email)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.GetLogin">
+            <summary>Sets the shim of AccountController.GetLogin()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.LoginStringStringBoolean">
+            <summary>Sets the shim of AccountController.Login(String email, String password, Boolean rememberMe)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.PostCookieCookieRequest">
+            <summary>Sets the shim of AccountController.PostCookie(CookieRequest cookieRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.PostLoginLoginRequest">
+            <summary>Sets the shim of AccountController.PostLogin(LoginRequest loginRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.PostRegisterRegisterRequest">
+            <summary>Sets the shim of AccountController.PostRegister(RegisterRequest registerRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.PostSignOut">
+            <summary>Sets the shim of AccountController.PostSignOut()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimAccountController.AllInstances.SaveUserProfileToDatabaseStringStringString">
+            <summary>Sets the shim of AccountController.SaveUserProfileToDatabase(String email, String fullName, String companyName)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimFileController">
+            <summary>Shim type of CKS.Prototype.Controllers.Api.FileController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.#ctor(CKS.Prototype.Controllers.Api.FileController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.Bind(System.Web.Http.Controllers.IHttpController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.ConstructorILoggerIBlobStorageIPrototypeUowHttpContextBaseIApiRequest">
+            <summary>Sets the shim of FileController.FileController(ILogger logger, IBlobStorage blobStorage, IPrototypeUow prototypeUow, HttpContextBase httpContextBase, IApiRequest apiRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.GetBlobFileNameString">
+            <summary>Sets the shim of FileController.GetBlobFileName(String fileName)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.GetElapsedTimeTimeSpan">
+            <summary>Sets the shim of FileController.GetElapsedTime(TimeSpan timeSpan)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.GetResultHttpContentHeadersStringInt64">
+            <summary>Sets the shim of FileController.GetResult(HttpContentHeaders headers, String fileName, Int64 sectionId)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.GetTimeStamp">
+            <summary>Sets the shim of FileController.GetTimeStamp()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.PostFloorPlan">
+            <summary>Sets the shim of FileController.PostFloorPlan()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.TryParseNullableString">
+            <summary>Sets the shim of FileController.TryParseNullable(String val)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.UpdateDatabaseStringStringStringStringNullableOfInt64">
+            <summary>Sets the shim of FileController.UpdateDatabase(String uniqueNumber, String iPAddress, String country, String floorPlanUrl, Nullable`1&lt;Int64&gt; requestSectionId)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.UploadBlobByteArrayString">
+            <summary>Sets the shim of FileController.UploadBlob(Byte[] content, String blobFileName)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.GetBlobFileNameString">
+            <summary>Sets the shim of FileController.GetBlobFileName(String fileName)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.GetResultHttpContentHeadersStringInt64">
+            <summary>Sets the shim of FileController.GetResult(HttpContentHeaders headers, String fileName, Int64 sectionId)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.GetTimeStamp">
+            <summary>Sets the shim of FileController.GetTimeStamp()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.PostFloorPlan">
+            <summary>Sets the shim of FileController.PostFloorPlan()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.UpdateDatabaseStringStringStringStringNullableOfInt64">
+            <summary>Sets the shim of FileController.UpdateDatabase(String uniqueNumber, String iPAddress, String country, String floorPlanUrl, Nullable`1&lt;Int64&gt; requestSectionId)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimFileController.AllInstances.UploadBlobByteArrayString">
+            <summary>Sets the shim of FileController.UploadBlob(Byte[] content, String blobFileName)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController">
+            <summary>Shim type of CKS.Prototype.Controllers.Api.PlanController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.#ctor(CKS.Prototype.Controllers.Api.PlanController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.Bind(System.Web.Http.Controllers.IHttpController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AppendAdjustmentsFromRequestSectionSection">
+            <summary>Sets the shim of PlanController.AppendAdjustmentsFromRequest(Section databaseSection, Section requestSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AppendSectionPropertiesFromRequestSectionSection">
+            <summary>Sets the shim of PlanController.AppendSectionPropertiesFromRequest(Section databaseSection, Section requestSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.CheckCreatedDateSameAsDatabaseProject">
+            <summary>Sets the shim of PlanController.CheckCreatedDateSameAsDatabase(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.CheckProjectUserProfileProject">
+            <summary>Sets the shim of PlanController.CheckProjectUserProfile(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.CheckSectionSessionSection">
+            <summary>Sets the shim of PlanController.CheckSectionSession(Section databaseSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.CheckSectionUserProfileSection">
+            <summary>Sets the shim of PlanController.CheckSectionUserProfile(Section databaseSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.ConstructorILoggerIPrototypeUowIWebSecurityHttpContextBase">
+            <summary>Sets the shim of PlanController.PlanController(ILogger logger, IPrototypeUow prototypeUow, IWebSecurity webSecurity, HttpContextBase context)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.GetExistingOrCreateNewProject">
+            <summary>Sets the shim of PlanController.GetExistingOrCreateNew(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.GetExistingProject">
+            <summary>Sets the shim of PlanController.GetExisting(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.GetProjects">
+            <summary>Sets the shim of PlanController.GetProjects()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.GetSessionKeyFromCookie">
+            <summary>Sets the shim of PlanController.GetSessionKeyFromCookie()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.InsertOrUpdateProjectProjectUserProfile">
+            <summary>Sets the shim of PlanController.InsertOrUpdateProject(Project project, UserProfile userProfile)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.PostSectionSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PostSection(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.PutAdjustmentsSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PutAdjustments(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.PutProjectSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PutProject(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController._GetProjectsb__2Project">
+            <summary>Sets the shim of PlanController.&lt;GetProjects&gt;b__2(Project p)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.AppendAdjustmentsFromRequestSectionSection">
+            <summary>Sets the shim of PlanController.AppendAdjustmentsFromRequest(Section databaseSection, Section requestSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.AppendSectionPropertiesFromRequestSectionSection">
+            <summary>Sets the shim of PlanController.AppendSectionPropertiesFromRequest(Section databaseSection, Section requestSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.CheckCreatedDateSameAsDatabaseProject">
+            <summary>Sets the shim of PlanController.CheckCreatedDateSameAsDatabase(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.CheckProjectUserProfileProject">
+            <summary>Sets the shim of PlanController.CheckProjectUserProfile(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.CheckSectionSessionSection">
+            <summary>Sets the shim of PlanController.CheckSectionSession(Section databaseSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.CheckSectionUserProfileSection">
+            <summary>Sets the shim of PlanController.CheckSectionUserProfile(Section databaseSection)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.GetExistingOrCreateNewProject">
+            <summary>Sets the shim of PlanController.GetExistingOrCreateNew(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.GetExistingProject">
+            <summary>Sets the shim of PlanController.GetExisting(Project project)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.GetProjects">
+            <summary>Sets the shim of PlanController.GetProjects()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.GetSessionKeyFromCookie">
+            <summary>Sets the shim of PlanController.GetSessionKeyFromCookie()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.InsertOrUpdateProjectProjectUserProfile">
+            <summary>Sets the shim of PlanController.InsertOrUpdateProject(Project project, UserProfile userProfile)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.PostSectionSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PostSection(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.PutAdjustmentsSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PutAdjustments(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.ShimPlanController.AllInstances.PutProjectSaveProjectRequest">
+            <summary>Sets the shim of PlanController.PutProject(SaveProjectRequest saveProjectRequest)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.StubAccountController">
+            <summary>Stub type of CKS.Prototype.Controllers.Api.AccountController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.#ctor(CKS.Contracts.ILogger,CKS.Contracts.IWebSecurity,CKS.Contracts.IPrototypeUow,System.Web.HttpContextBase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.Dispose(System.Boolean)">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.DisposeBoolean">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.ExecuteAsync(System.Web.Http.Controllers.HttpControllerContext,System.Threading.CancellationToken)">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.ExecuteAsyncHttpControllerContextCancellationToken">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.Initialize(System.Web.Http.Controllers.HttpControllerContext)">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.InitializeHttpControllerContext">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.InitializeStub">
+            <summary>Initializes a new instance of type StubAccountController</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubAccountController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.StubFileController">
+            <summary>Stub type of CKS.Prototype.Controllers.Api.FileController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubFileController.#ctor(CKS.Contracts.ILogger,CKS.Contracts.IBlobStorage,CKS.Contracts.IPrototypeUow,System.Web.HttpContextBase,CKS.Contracts.IApiRequest)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubFileController.Dispose(System.Boolean)">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubFileController.DisposeBoolean">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubFileController.ExecuteAsync(System.Web.Http.Controllers.HttpControllerContext,System.Threading.CancellationToken)">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubFileController.ExecuteAsyncHttpControllerContextCancellationToken">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubFileController.Initialize(System.Web.Http.Controllers.HttpControllerContext)">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubFileController.InitializeHttpControllerContext">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubFileController.InitializeStub">
+            <summary>Initializes a new instance of type StubFileController</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubFileController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubFileController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubFileController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Api.Fakes.StubPlanController">
+            <summary>Stub type of CKS.Prototype.Controllers.Api.PlanController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.#ctor(CKS.Contracts.ILogger,CKS.Contracts.IPrototypeUow,CKS.Contracts.IWebSecurity,System.Web.HttpContextBase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.Dispose(System.Boolean)">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.DisposeBoolean">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.ExecuteAsync(System.Web.Http.Controllers.HttpControllerContext,System.Threading.CancellationToken)">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.ExecuteAsyncHttpControllerContextCancellationToken">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.Initialize(System.Web.Http.Controllers.HttpControllerContext)">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.InitializeHttpControllerContext">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.InitializeStub">
+            <summary>Initializes a new instance of type StubPlanController</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Api.Fakes.StubPlanController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.ShimHomeController">
+            <summary>Shim type of CKS.Prototype.Controllers.HomeController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.#ctor(CKS.Prototype.Controllers.HomeController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IAuthorizationFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IExceptionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IResultFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.Async.IAsyncController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.Async.IAsyncManagerContainer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimHomeController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.About">
+            <summary>Sets the shim of HomeController.About()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.Constructor">
+            <summary>Sets the shim of HomeController.HomeController()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.Index">
+            <summary>Sets the shim of HomeController.Index()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.ShimHomeController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.AllInstances.About">
+            <summary>Sets the shim of HomeController.About()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimHomeController.AllInstances.Index">
+            <summary>Sets the shim of HomeController.Index()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController">
+            <summary>Shim type of CKS.Prototype.Controllers.ViewSwitcherController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.#ctor(CKS.Prototype.Controllers.ViewSwitcherController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.IAuthorizationFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.IController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.IExceptionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.IResultFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.Async.IAsyncController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.Web.Mvc.Async.IAsyncManagerContainer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.Constructor">
+            <summary>Sets the shim of ViewSwitcherController.ViewSwitcherController()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.SwitchViewBooleanString">
+            <summary>Sets the shim of ViewSwitcherController.SwitchView(Boolean mobile, String returnUrl)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.ShimViewSwitcherController.AllInstances.SwitchViewBooleanString">
+            <summary>Sets the shim of ViewSwitcherController.SwitchView(Boolean mobile, String returnUrl)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.StubHomeController">
+            <summary>Stub type of CKS.Prototype.Controllers.HomeController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.BeginExecuteCore(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.BeginExecuteCoreAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.BeginExecuteRequestContextAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Content(System.String,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.ContentStringStringEncoding">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.CreateActionInvoker">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.CreateActionInvoker01">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.CreateTempDataProvider">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.CreateTempDataProvider01">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.DisableAsyncSupportGet">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Dispose(System.Boolean)">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.DisposeBoolean">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.EndExecute(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.EndExecuteCore(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.EndExecuteCoreIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.EndExecuteIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Execute(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.ExecuteCore">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.ExecuteCore01">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.ExecuteRequestContext">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.File(System.Byte[],System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.File(System.String,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.File(System.IO.Stream,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.FileByteArrayStringString">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.FileStreamStringString">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.FileStringStringString">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.HandleUnknownAction(System.String)">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.HandleUnknownActionString">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.HttpNotFound(System.String)">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.HttpNotFoundString">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Initialize(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.InitializeRequestContext">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.InitializeStub">
+            <summary>Initializes a new instance of type StubHomeController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.JavaScript(System.String)">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.JavaScriptString">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Json(System.Object,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.JsonObjectStringEncoding">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.JsonObjectStringEncodingJsonRequestBehavior">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnActionExecutedActionExecutedContext">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnActionExecutingActionExecutingContext">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnAuthorizationAuthorizationContext">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnExceptionExceptionContext">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnResultExecutedResultExecutedContext">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.OnResultExecutingResultExecutingContext">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.PartialView(System.String,System.Object)">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.PartialViewStringObject">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.Redirect(System.String)">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectPermanent(System.String)">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectPermanentString">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectString">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToAction(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToActionPermanent(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToActionPermanentStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToActionStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToRoutePermanentStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.RedirectToRouteStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.View(System.Web.Mvc.IView,System.Object)">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubHomeController.View(System.String,System.String,System.Object)">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.ViewIViewObject">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubHomeController.ViewStringStringObject">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubHomeController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubHomeController.DisableAsyncSupport">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubHomeController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubHomeController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController">
+            <summary>Stub type of CKS.Prototype.Controllers.ViewSwitcherController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.BeginExecuteCore(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.BeginExecuteCoreAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.BeginExecuteRequestContextAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Content(System.String,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ContentStringStringEncoding">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.CreateActionInvoker">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.CreateActionInvoker01">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.CreateTempDataProvider">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.CreateTempDataProvider01">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.DisableAsyncSupportGet">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Dispose(System.Boolean)">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.DisposeBoolean">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.EndExecute(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.EndExecuteCore(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.EndExecuteCoreIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.EndExecuteIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Execute(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ExecuteCore">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ExecuteCore01">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ExecuteRequestContext">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.File(System.Byte[],System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.File(System.String,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.File(System.IO.Stream,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.FileByteArrayStringString">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.FileStreamStringString">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.FileStringStringString">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.HandleUnknownAction(System.String)">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.HandleUnknownActionString">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.HttpNotFound(System.String)">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.HttpNotFoundString">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Initialize(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.InitializeRequestContext">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.InitializeStub">
+            <summary>Initializes a new instance of type StubViewSwitcherController</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.JavaScript(System.String)">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.JavaScriptString">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Json(System.Object,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.JsonObjectStringEncoding">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.JsonObjectStringEncodingJsonRequestBehavior">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnActionExecutedActionExecutedContext">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnActionExecutingActionExecutingContext">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnAuthorizationAuthorizationContext">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnExceptionExceptionContext">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnResultExecutedResultExecutedContext">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.OnResultExecutingResultExecutingContext">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.PartialView(System.String,System.Object)">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.PartialViewStringObject">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.Redirect(System.String)">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectPermanent(System.String)">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectPermanentString">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectString">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToAction(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToActionPermanent(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToActionPermanentStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToActionStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToRoutePermanentStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.RedirectToRouteStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.View(System.Web.Mvc.IView,System.Object)">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.View(System.String,System.String,System.Object)">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ViewIViewObject">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.ViewStringStringObject">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.DisableAsyncSupport">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Controllers.Fakes.StubViewSwitcherController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimAuthConfig">
+            <summary>Shim type of CKS.Prototype.AuthConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimAuthConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimAuthConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimAuthConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimAuthConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimAuthConfig.RegisterAuth">
+            <summary>Sets the shim of AuthConfig.RegisterAuth()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimBundleConfig">
+            <summary>Shim type of CKS.Prototype.BundleConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimBundleConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimBundleConfig.RegisterBundlesBundleCollection">
+            <summary>Sets the shim of BundleConfig.RegisterBundles(BundleCollection bundles)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimBundleMobileConfig">
+            <summary>Shim type of CKS.Prototype.BundleMobileConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleMobileConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleMobileConfig.#ctor(CKS.Prototype.BundleMobileConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleMobileConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimBundleMobileConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimBundleMobileConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimBundleMobileConfig.Constructor">
+            <summary>Sets the shim of BundleMobileConfig.BundleMobileConfig()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimBundleMobileConfig.RegisterBundlesBundleCollection">
+            <summary>Sets the shim of BundleMobileConfig.RegisterBundles(BundleCollection bundles)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimBundleMobileConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimDatabaseConfig">
+            <summary>Shim type of CKS.Prototype.DatabaseConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimDatabaseConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimDatabaseConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimDatabaseConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimDatabaseConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimDatabaseConfig.InitializeDatabaseILogger">
+            <summary>Sets the shim of DatabaseConfig.InitializeDatabase(ILogger logger)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimFilterConfig">
+            <summary>Shim type of CKS.Prototype.FilterConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimFilterConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimFilterConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimFilterConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimFilterConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimFilterConfig.RegisterGlobalFiltersGlobalFilterCollection">
+            <summary>Sets the shim of FilterConfig.RegisterGlobalFilters(GlobalFilterCollection filters)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimMvcApplication">
+            <summary>Shim type of CKS.Prototype.MvcApplication</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.#ctor(CKS.Prototype.MvcApplication)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.Bind(System.Web.IHttpAsyncHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.Bind(System.Web.IHttpHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimMvcApplication.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.Application_ErrorObjectEventArgs">
+            <summary>Sets the shim of MvcApplication.Application_Error(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.Application_Start">
+            <summary>Sets the shim of MvcApplication.Application_Start()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.Constructor">
+            <summary>Sets the shim of MvcApplication.MvcApplication()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimMvcApplication.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.AllInstances.Application_ErrorObjectEventArgs">
+            <summary>Sets the shim of MvcApplication.Application_Error(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimMvcApplication.AllInstances.Application_Start">
+            <summary>Sets the shim of MvcApplication.Application_Start()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimRouteConfig">
+            <summary>Shim type of CKS.Prototype.RouteConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimRouteConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimRouteConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimRouteConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimRouteConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimRouteConfig.RegisterRoutesRouteCollection">
+            <summary>Sets the shim of RouteConfig.RegisterRoutes(RouteCollection routes)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimUnityConfig">
+            <summary>Shim type of CKS.Prototype.UnityConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimUnityConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimUnityConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimUnityConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimUnityConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimUnityConfig.BuildUnityContainer">
+            <summary>Sets the shim of UnityConfig.BuildUnityContainer()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimUnityConfig._BuildUnityContainerb__0IUnityContainer">
+            <summary>Sets the shim of UnityConfig.&lt;BuildUnityContainer&gt;b__0(IUnityContainer c)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.ShimWebApiConfig">
+            <summary>Shim type of CKS.Prototype.WebApiConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimWebApiConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimWebApiConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.ShimWebApiConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimWebApiConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.ShimWebApiConfig.RegisterHttpConfiguration">
+            <summary>Sets the shim of WebApiConfig.Register(HttpConfiguration config)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.StubBundleMobileConfig">
+            <summary>Stub type of CKS.Prototype.BundleMobileConfig</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubBundleMobileConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubBundleMobileConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubBundleMobileConfig</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubBundleMobileConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubBundleMobileConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubBundleMobileConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Fakes.StubMvcApplication">
+            <summary>Stub type of CKS.Prototype.MvcApplication</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.Dispose">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Fakes.StubMvcApplication.Dispose01">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.GetOutputCacheProviderName(System.Web.HttpContext)">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Fakes.StubMvcApplication.GetOutputCacheProviderNameHttpContext">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Fakes.StubMvcApplication.GetVaryByCustomStringHttpContextString">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.Init">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Fakes.StubMvcApplication.Init01">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Fakes.StubMvcApplication.InitializeStub">
+            <summary>Initializes a new instance of type StubMvcApplication</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubMvcApplication.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubMvcApplication.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Fakes.StubMvcApplication.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute">
+            <summary>Shim type of CKS.Prototype.Filters.AjaxCrawlableAttribute</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.#ctor(CKS.Prototype.Filters.AjaxCrawlableAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.Bind(System.Web.Mvc.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.Bind(System.Web.Mvc.IMvcFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.Bind(System.Web.Mvc.IResultFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.Constructor">
+            <summary>Sets the shim of AjaxCrawlableAttribute.AjaxCrawlableAttribute()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.OnActionExecutingActionExecutingContext">
+            <summary>Sets the shim of AjaxCrawlableAttribute.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.RedirectPostStepsActionExecutingContextString">
+            <summary>Sets the shim of AjaxCrawlableAttribute.RedirectPostSteps(ActionExecutingContext filterContext, String part1)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimAjaxCrawlableAttribute.AllInstances.OnActionExecutingActionExecutingContext">
+            <summary>Sets the shim of AjaxCrawlableAttribute.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute">
+            <summary>Shim type of CKS.Prototype.Filters.InitializeSimpleMembershipAttribute</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.#ctor(CKS.Prototype.Filters.InitializeSimpleMembershipAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.Bind(System.Web.Http.Filters.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.Bind(System.Web.Http.Filters.IFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.Constructor">
+            <summary>Sets the shim of InitializeSimpleMembershipAttribute.InitializeSimpleMembershipAttribute()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.OnActionExecutingHttpActionContext">
+            <summary>Sets the shim of InitializeSimpleMembershipAttribute.OnActionExecuting(HttpActionContext actionContext)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.StaticConstructor">
+            <summary>Sets the shim of InitializeSimpleMembershipAttribute.InitializeSimpleMembershipAttribute()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.ShimInitializeSimpleMembershipAttribute.AllInstances.OnActionExecutingHttpActionContext">
+            <summary>Sets the shim of InitializeSimpleMembershipAttribute.OnActionExecuting(HttpActionContext actionContext)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute">
+            <summary>Stub type of CKS.Prototype.Filters.AjaxCrawlableAttribute</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.Equals(System.Object)">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.EqualsObject">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.GetHashCode">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.GetHashCode01">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.InitializeStub">
+            <summary>Initializes a new instance of type StubAjaxCrawlableAttribute</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.IsDefaultAttribute">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.IsDefaultAttribute01">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.Match(System.Object)">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.MatchObject">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>Sets the stub of ActionFilterAttribute.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnActionExecutedActionExecutedContext">
+            <summary>Sets the stub of ActionFilterAttribute.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>Sets the stub of AjaxCrawlableAttribute.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnActionExecutingActionExecutingContext">
+            <summary>Sets the stub of AjaxCrawlableAttribute.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>Sets the stub of ActionFilterAttribute.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnResultExecutedResultExecutedContext">
+            <summary>Sets the stub of ActionFilterAttribute.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <summary>Sets the stub of ActionFilterAttribute.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.OnResultExecutingResultExecutingContext">
+            <summary>Sets the stub of ActionFilterAttribute.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.TypeIdGet">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Filters.Fakes.StubAjaxCrawlableAttribute.TypeId">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity">
+            <summary>Shim type of CKS.Prototype.Injections.ViewModelToEntity</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.#ctor(CKS.Prototype.Injections.ViewModelToEntity)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.Bind(Omu.ValueInjecter.IValueInjection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.Constructor">
+            <summary>Sets the shim of ViewModelToEntity.ViewModelToEntity()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.MatchConventionInfo">
+            <summary>Sets the shim of ViewModelToEntity.Match(ConventionInfo c)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.SetValueConventionInfo">
+            <summary>Sets the shim of ViewModelToEntity.SetValue(ConventionInfo c)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.AllInstances.MatchConventionInfo">
+            <summary>Sets the shim of ViewModelToEntity.Match(ConventionInfo c)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.ShimViewModelToEntity.AllInstances.SetValueConventionInfo">
+            <summary>Sets the shim of ViewModelToEntity.SetValue(ConventionInfo c)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Injections.Fakes.StubViewModelToEntity">
+            <summary>Stub type of CKS.Prototype.Injections.ViewModelToEntity</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.InitializeStub">
+            <summary>Initializes a new instance of type StubViewModelToEntity</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.Inject(System.Object,System.Object)">
+            <summary>Sets the stub of ConventionInjection.Inject(Object source, Object target)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.InjectObjectObject">
+            <summary>Sets the stub of ConventionInjection.Inject(Object source, Object target)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.Match(Omu.ValueInjecter.ConventionInfo)">
+            <summary>Sets the stub of ViewModelToEntity.Match(ConventionInfo c)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.MatchConventionInfo">
+            <summary>Sets the stub of ViewModelToEntity.Match(ConventionInfo c)</summary>
+        </member>
+        <member name="M:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.SetValue(Omu.ValueInjecter.ConventionInfo)">
+            <summary>Sets the stub of ViewModelToEntity.SetValue(ConventionInfo c)</summary>
+        </member>
+        <member name="F:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.SetValueConventionInfo">
+            <summary>Sets the stub of ViewModelToEntity.SetValue(ConventionInfo c)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Injections.Fakes.StubViewModelToEntity.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper">
+            <summary>Shim type of CKS.Prototype.Wrappers.ApiRequestWrapper</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.#ctor(CKS.Prototype.Wrappers.ApiRequestWrapper)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.Bind(CKS.Contracts.IApiRequest)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.Constructor">
+            <summary>Sets the shim of ApiRequestWrapper.ApiRequestWrapper()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.IsMimeMultipartContentHttpContent">
+            <summary>Sets the shim of ApiRequestWrapper.IsMimeMultipartContent(HttpContent httpContent)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.ReadAsMultipartAsyncHttpContentMultipartMemoryStreamProvider">
+            <summary>Sets the shim of ApiRequestWrapper.ReadAsMultipartAsync(HttpContent httpContent, MultipartMemoryStreamProvider provider)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.AllInstances.IsMimeMultipartContentHttpContent">
+            <summary>Sets the shim of ApiRequestWrapper.IsMimeMultipartContent(HttpContent httpContent)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimApiRequestWrapper.AllInstances.ReadAsMultipartAsyncHttpContentMultipartMemoryStreamProvider">
+            <summary>Sets the shim of ApiRequestWrapper.ReadAsMultipartAsync(HttpContent httpContent, MultipartMemoryStreamProvider provider)</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper">
+            <summary>Shim type of CKS.Prototype.Wrappers.WebSecurityWrapper</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.#ctor(CKS.Prototype.Wrappers.WebSecurityWrapper)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.Bind(CKS.Contracts.IWebSecurity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.Constructor">
+            <summary>Sets the shim of WebSecurityWrapper.WebSecurityWrapper()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.CreateUserAndAccountStringString">
+            <summary>Sets the shim of WebSecurityWrapper.CreateUserAndAccount(String userName, String password)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.CurrentUserName">
+            <summary>Sets the shim of WebSecurityWrapper.CurrentUserName()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.IsAuthenticated">
+            <summary>Sets the shim of WebSecurityWrapper.IsAuthenticated()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.LoginStringStringBoolean">
+            <summary>Sets the shim of WebSecurityWrapper.Login(String userName, String password, Boolean rememberMe)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.Logout">
+            <summary>Sets the shim of WebSecurityWrapper.Logout()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances.CreateUserAndAccountStringString">
+            <summary>Sets the shim of WebSecurityWrapper.CreateUserAndAccount(String userName, String password)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances.CurrentUserName">
+            <summary>Sets the shim of WebSecurityWrapper.CurrentUserName()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances.IsAuthenticated">
+            <summary>Sets the shim of WebSecurityWrapper.IsAuthenticated()</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances.LoginStringStringBoolean">
+            <summary>Sets the shim of WebSecurityWrapper.Login(String userName, String password, Boolean rememberMe)</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.ShimWebSecurityWrapper.AllInstances.Logout">
+            <summary>Sets the shim of WebSecurityWrapper.Logout()</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper">
+            <summary>Stub type of CKS.Prototype.Wrappers.ApiRequestWrapper</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper.InitializeStub">
+            <summary>Initializes a new instance of type StubApiRequestWrapper</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubApiRequestWrapper.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper">
+            <summary>Stub type of CKS.Prototype.Wrappers.WebSecurityWrapper</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper.InitializeStub">
+            <summary>Initializes a new instance of type StubWebSecurityWrapper</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CKS.Prototype.Wrappers.Fakes.StubWebSecurityWrapper.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

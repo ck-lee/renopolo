@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RenoPolo - Online Renovation Calculator and Estimator Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Just upload your house plan to measure the area of your house">
+    <meta name="author" content="ck@renopolo.com">
+    <!-- Le styles -->
+    @Styles.Render("~/Content/css-mobile")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        $(document).bind("mobileinit", function () {
+            $.mobile.pushStateEnabled = false;
+            $.mobile.ajaxEnabled = false;
+            $.mobile.hashListeningEnabled = false;
+        });
+    </script>
+    @Scripts.Render("~/bundles/jquerymobile")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/libraries")
+    @Scripts.Render("~/bundles/fileupload")
+    @Scripts.Render("~/bundles/cks")
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39152788-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_trackPageview', '/']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+
+
+<body>
+    <div data-role="page">
+        @Html.Partial("_ViewSwitcher")
+        <div data-role="header" data-theme="c">
+            <h1>TED Prototype</h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+        </div>
+        <div data-role="panel" id="left-panel" data-theme="c">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                <li><a href="#!/">HOME</a></li>
+                <li><a href="#!/post/step1">PLAN</a></li>
+                <li><a href="#!/about">ABOUT</a></li>
+            </ul>
+        </div>
+        <div data-role="content" data-theme="c">
+            <div id="content" data-role="content" data-theme="c"></div>
+            <div id="post-content"></div>
+            @RenderBody()
+        </div>
+        <div data-role="footer">
+            <p>TED Sandbox</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var app;
+        $(function () {
+            app = cks.application(true);
+        });
+    </script>
+</body>
+
+</html>
+

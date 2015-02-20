@@ -1,0 +1,17 @@
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>CKS</Word>
+      <Word>Auth</Word>
+      <Word>Mvc</Word>
+      <Word>Api</Word>
+      <Word>Uow</Word>
+      <Word>name</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>CKS</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RenoPolo - Online Renovation Calculator and Estimator Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helping DIY homeowners to renovate like the pros. Just upload your house plan, and follow our simple steps.">
+    <meta name="author" content="ck@renopolo.com">
+    <meta property="og:title" content="RenoPolo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.renopolo.com" />
+    <meta property="og:image" content="http://www.renopolo.com/Images/paintwaste.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="386" />
+    <meta property="og:image:height" content="316" />
+
+    @Styles.Render("~/Content/css")
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="/Scripts/ThirdParty/respond.js"></script>
+    <![endif]-->
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/libraries")
+    @Scripts.Render("~/bundles/fileupload")
+    @Scripts.Render("~/bundles/cks")
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39152788-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_trackPageview', '/']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/MeasureTapeIco.png">
+    <script type="text/javascript">var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({ publisher: "7579c857-512a-4f28-8dc3-2ff6f215535e", doNotHash: true, doNotCopy: true, hashAddressBar: false });</script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 style="letter-spacing: -2px;"><span style="font-weight: bold; color: #c53827">Reno</span><span style="color: #4b9bce">Polo</span><span style="font-size: 16px; letter-spacing: 0;">&nbsp;beta</span></h1>
+    </div>
+    <div class="navbar" id="styled-navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <div>
+                    <div id="project-selection" data-bind="css:{invisible: !sectionIsVisible() }, click: projectSelectionClicked">
+                        <div class="alert ui-pnotify-container project-selection-custom ui-pnotify-sharp m-green">
+                            <div class="ui-pnotify-icon"><span data-bind="css: { 'icon-asterisk': !userIsSignedIn(), 'icon-chevron-down': userIsSignedIn()}"></span></div>
+                            <h4 class="ui-pnotify-title project-selection-custom" data-bind="text: titleDisplay"></h4>
+                            <div class="ui-pnotify-text project-selection-custom" data-bind="text: sectionDisplay"></div>
+                        </div>
+                    </div>
+
+                    <ul class="nav">
+                        <li><a href="#!/" class="m-btn big" data-toggle="collapse" data-target=".nav-collapse">HOME</a></li>
+                        <li><a href="#!/post/step1" class="m-btn big" data-toggle="collapse" data-target=".nav-collapse">PLAN</a></li>
+                        <!--<li><a href="#!/faq" class="m-btn big" data-toggle="collapse" data-target=".nav-collapse">FAQ</a></li>-->
+                        <li><a href="#!/about" class="m-btn big" data-toggle="collapse" data-target=".nav-collapse">ABOUT</a></li>
+                    </ul>
+                    <div class="pull-right" id="login">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project-list" style="display:none;" data-bind="slideVisible: projectListIsVisible()">
+        <div data-bind="foreach: projectList()">
+            <div class="alert ui-pnotify-container project-list-custom ui-pnotify-sharp m-green-light" data-bind="click:projectIsSelected">
+                <div class="ui-pnotify-icon"><span class="icon-chevron-right"></span></div>
+                <h4 class="ui-pnotify-title project-selection-custom" data-bind="text: title"></h4>
+                <div class="ui-pnotify-text project-selection-custom" data-bind="text: subDisplay"></div>
+            </div>
+        </div>
+        <div class="alert ui-pnotify-container project-list-custom ui-pnotify-sharp m-green-light" data-bind="click: startNewPlanIsClicked">
+            <div class="ui-pnotify-icon"><span class="icon-chevron-right"></span></div>
+            <h4 class="ui-pnotify-title project-selection-custom" data-bind="">* New Plan</h4>
+            <div class="ui-pnotify-text project-selection-custom" data-bind="">Click here to start a new plan</div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content"></div>
+        <div id="post-content"></div>
+        @RenderBody()
+        <hr>
+        <footer id="styled-footer">
+            <p>
+                <span class='st_facebook_large' displaytext='Facebook'></span>
+                <span class='st_twitter_large' displaytext='Tweet'></span>
+                <span class='st_linkedin_large' displaytext='LinkedIn'></span>
+                <span class='st_googleplus_large' displaytext='Google +'></span>
+            </p>
+            <hr />
+            <p>Send your suggestions or report any problems to <a href="mailto:&#99;&#107;&#64;&#114;&#101;&#110;&#111;&#112;&#111;&#108;&#111;&#46;&#99;&#111;&#109;">&#99;&#107;&#64;&#114;&#101;&#110;&#111;&#112;&#111;&#108;&#111;&#46;&#99;&#111;&#109;</a> </p>
+            <h6>© RenoPolo.com 2013</h6>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        var app;
+        $(function () {
+            app = cks.application();
+        });
+    </script>
+</body>
+
+</html>
+

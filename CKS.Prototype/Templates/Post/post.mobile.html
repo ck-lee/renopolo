@@ -1,0 +1,63 @@
+﻿<h3>PLAN</h3>
+<div id="plan-view" class="content-container" style="display: none;">
+    <div id="plan-steps" data-role="controlgroup">
+        <a data-role="button" id="plan-s1"
+            data-bind="click: step1Clicked">1: Calculation Type
+        </a>
+        <a data-role="button" id="plan-s2"
+            data-bind="click: step2Clicked">2: Measurements
+        </a>
+        <a data-role="button" id="plan-s3"
+            data-bind="click: step3Clicked">3: Adjustments
+        </a>
+        <a data-role="button" id="plan-s4"
+            data-bind="click: step4Clicked">4: Results
+        </a>
+    </div>
+    <div class="step-container">
+        <div id="plan-step1" class="row fixed-size-container animate-from-left"></div>
+        <div id="plan-step2" class="animate-from-left fixed-size-container"></div>
+        <div id="plan-step3" class="animate-from-left fixed-size-container"></div>
+        <div id="plan-step4" class="animate-from-left fixed-size-container "></div>
+    </div>
+    <div id="post-preview" class="clear-fix"></div>
+    <div class="ui-grid-a">
+        <div class="ui-block-a"><a data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" href="#" data-bind="click:backClicked, css : {disabled: isLoading}, visible:backButtonIsVisible">Back</a></div>
+        <div class="ui-block-b"><a data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" data-theme="b" href="#" data-bind="visible: contineButtonIsVisible, click:continueClicked, css : {disabled: isLoading}">Continue</a></div>
+        <span class="loading" data-bind="visible:isLoading"></span>
+    </div>
+    <div class="popover fade right in" id="canvasPopover" style="position: absolute; left: -1000px; display: block;">
+        <div class="arrow"></div>
+        <div class="popover-content" data-bind="text: tracer.popoverText"></div>
+    </div>
+    <div class="hide">
+        <div id="insertWallLengthModal">
+            <div class="modal-header">
+                <h3 id="insertWallLengthLabel">Length of the First Wall</h3>
+            </div>
+            <div class="modal-body">
+                <div class="control-group" data-bind="css:{'error' : !wallsVm.pseudoFirstWallLength.isValid() }">
+                    <label class="title">What is the actual length of this wall?</label>
+                    <div id="firstWallLength" class="inline-container" data-bind="measurement:{
+	                        unitsSystem: 'planningVm.unitsSystem',
+	                        observable: 'wallsVm.pseudoFirstWallLength',
+	                        metric: [{label: 'cm', subObservable: 'wallsVm.firstWallLengthInput.cm'} ],
+	                        imperial: [{label: 'ft', subObservable: 'wallsVm.firstWallLengthInput.ft'}, {label: 'in', subObservable: 'wallsVm.firstWallLengthInput.in'}]
+                        }">
+                    </div>
+                    <div class="errors-container">
+                        <span class="field-validation-valid" data-bind="css : {'field-validation-valid': wallsVm.pseudoFirstWallLength.isValid(), 'field-validation-error' : !wallsVm.pseudoFirstWallLength.isValid() }, text: wallsVm.pseudoFirstWallLength.validationMessage"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bind="click:wallsVm.firstWallLengthModalCloseClicked">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿<h4>Results</h4>
+<div id="traceResult" tabindex="0"></div>
+<h4 class="plan-question">
+    1. Would you like to save this plan?
+</h4>
+<div data-role="controlgroup" data-bind="css: { 'error': !resultsVm.savePlanName.isValid() }">
+    <input type="text" data-bind="value: planningVm.title" />
+    <div class="errors-container">
+        <span class="field-validation-valid" data-bind="css: { 'field-validation-valid': resultsVm.savePlanName.isValid(), 'field-validation-error': !resultsVm.savePlanName.isValid() }, text: resultsVm.savePlanName.validationMessage"></span>
+    </div>
+    <div class="span2">
+        <a class="btn btn-primary" data-bind="click: resultsVm.saveClicked, visible: !resultsVm.isLoading()">Save</a>
+        <span class="loading" data-bind="visible: resultsVm.isLoading" style="display: none;"></span>
+    </div>
+</div>

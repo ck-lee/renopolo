@@ -1,0 +1,54 @@
+﻿<div class="plan-subtitle">
+    <h4>Quick View</h4>
+</div>
+<div class="title"></div>
+<div class="row plan-seperator"></div>
+<div class="measurements red pull-left" data-bind="slideVisible: currentStep() === '2'">
+    <div><strong>Exterior Walls</strong></div>
+    <div class="large-display" data-bind="text: traceEstimateVm.exteriorWalls().length"></div>
+    <div data-bind="slideVisible: wallsVm.heightInCm() > 0">Height: <span data-bind="    text: wallsVm.getMeasurementInDisplay(wallsVm.heightInCm())"></span></div>
+    <div data-bind="slideVisible: traceEstimateVm.exteriorWalls().length > 0">Total Length: <span data-bind="    text: traceEstimateVm.wallsTotalLengthDisplay(traceEstimateVm.exteriorWalls())"></span></div>
+    <div data-bind="slideVisible: traceEstimateVm.exteriorWalls().length > 0">Gross Measured Area: <span data-bind="    text: traceEstimateVm.wallsGrossMeasuredAreaDisplay(traceEstimateVm.exteriorWalls())"></span></div>
+</div>
+<div class="measurements red pull-left" data-bind="slideVisible: (currentStep() === '3' || currentStep() === '4') && traceEstimateVm.exteriorWalls().length > 0">
+    <div><strong>Exterior Walls</strong></div>
+    <div>
+        <div class="big-display" data-bind="html: traceEstimateVm.exteriorWallsNetSurfaceAreaDisplay"></div>
+        <div class="pull-right">Net Total Surface Area</div>
+    </div>
+    <div class="row plan-seperator" style="clear: both;"></div>
+    <div class="span3">Gross Measured Area: <span class="pull-right" data-bind="text: traceEstimateVm.wallsGrossMeasuredAreaDisplay(traceEstimateVm.exteriorWalls())"></span></div>
+    <div class="span3">Adjustments: <span class="pull-right" data-bind="text: wallsVm.exteriorAdjustmentsDisplay"></span></div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="measurements green pull-left" data-bind="slideVisible: currentStep() === '2'">
+    <div><strong>Internal Walls</strong></div>
+    <div class="large-display" data-bind="text: traceEstimateVm.internalWalls().length"></div>
+    <div data-bind="slideVisible: wallsVm.heightInCm() > 0">Height: <span data-bind="    text: wallsVm.getMeasurementInDisplay(wallsVm.heightInCm())"></span></div>
+    <div data-bind="slideVisible: traceEstimateVm.internalWalls().length > 0">Total Length: <span data-bind="    text: traceEstimateVm.wallsTotalLengthDisplay(traceEstimateVm.internalWalls())"></span></div>
+    <div data-bind="slideVisible: traceEstimateVm.internalWalls().length > 0">Gross Measured Area: <span data-bind="    text: traceEstimateVm.wallsGrossMeasuredAreaDisplay(traceEstimateVm.internalWalls())"></span></div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="measurements green pull-left" data-bind="slideVisible: (currentStep() === '3' || currentStep() === '4') && traceEstimateVm.internalWalls().length > 0">
+    <div><strong>Internal Walls</strong></div>
+    <div>
+        <div class="big-display" data-bind="html: traceEstimateVm.internalWallsNetSurfaceAreaDisplay"></div>
+        <div class="pull-right">Net Total Surface Area</div>
+    </div>
+    <div class="row plan-seperator" style="clear: both;"></div>
+    <div class="span3">Gross Measured Area: <span class="pull-right" data-bind="text: traceEstimateVm.wallsGrossMeasuredAreaDisplay(traceEstimateVm.internalWalls())"></span></div>
+    <div class="span3">Adjustments: <span class="pull-right" data-bind="text: wallsVm.internalAdjustmentsDisplay"></span></div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row plan-seperator"></div>
+<div class="measurements purple pull-left" data-bind="slideVisible: (currentStep() === '3' || currentStep() === '4') && traceEstimateVm.internalWalls().length > 0 && traceEstimateVm.exteriorWalls().length > 0">
+    <div><strong>Interior Walls</strong></div>
+    <div>
+        <div class="big-display" data-bind="html: traceEstimateVm.interiorWallsNetSurfaceAreaDisplay"></div>
+        <div class="pull-right">Net Total Surface Area</div>
+        <div class="pull-right">Sum of  exterior and internal walls</div>
+    </div>
+    <div class="row plan-seperator" style="clear: both;">
+        <div class="span3"></div>
+    </div>
+</div>

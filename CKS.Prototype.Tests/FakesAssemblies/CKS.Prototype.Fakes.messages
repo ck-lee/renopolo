@@ -1,0 +1,21 @@
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.AuthConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.BundleConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.DatabaseConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.FilterConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.RouteConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.UnityConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.WebApiConfig: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for CKS.Prototype.Filters.InitializeSimpleMembershipAttribute: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for <>f__AnonymousType0`3: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for <>f__AnonymousType1`2: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for <>f__AnonymousType2`2: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate stub for <>f__AnonymousType3`1: type is sealed.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for CKS.Prototype.Injections.ViewModelToEntity+<SetValue>o__SiteContainer0: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for CKS.Prototype.Controllers.Api.FileController+<>c__DisplayClass2: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for CKS.Prototype.Controllers.Api.FileController+<>c__DisplayClass4: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for CKS.Prototype.Controllers.Api.FileController+<PostFloorPlan>d__6: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for CKS.Prototype.Filters.InitializeSimpleMembershipAttribute+SimpleMembershipInitializer: type is not visible to exported or assembly(CKS.Prototype.Fakes).
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for <>f__AnonymousType0`3: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for <>f__AnonymousType1`2: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for <>f__AnonymousType2`2: type is not supported because of internal limitations.
+D:\github\renopolo\CKS.Prototype.Tests\Fakes\CKS.Prototype.fakes : warning : Cannot generate shim for <>f__AnonymousType3`1: type is not supported because of internal limitations.

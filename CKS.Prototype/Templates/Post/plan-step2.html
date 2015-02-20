@@ -1,0 +1,175 @@
+﻿<div class="row">
+    <div class="span6 plan-subtitle">
+        <h4>Measurements</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="span6">
+        <h4 class="plan-question">1. What's your Unit of Measurements?</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="span6 plan-offset1">
+        <div class="btn-group" data-toggle="buttons-radio">
+            <div class="row">
+                <div class="span1 btn-container">
+                    <a id="metricUnitsSystem" class="btn btn-primary active" data-bind="click: planningVm.metricClicked">Metric</a>
+                </div>
+                <div class="span3 info-container">
+                    <i>eg: cm, m²</i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span1 btn-container">
+                    <a id="imperialUnitsSystem" class="btn btn-primary" data-bind="click: planningVm.imperialClicked">Imperial</a>    
+                </div>
+                <div class="span3 info-container">
+                    <i>eg: ft in, sq ft</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row">
+    <div class="span5 plan-offset1">
+        <div id="unitsSystemAlert" class="alert fade in" style="display: none;">
+            <button type="button" class="close" data-bind="click: planningVm.cancelUnitsSystemAlertClicked">×</button>
+            <h4 class="alert-heading bold-text">Watch out! </h4>
+            <p>This will delete all the tracing that you have done. </p>
+            <button class="btn btn-danger" data-bind="click: planningVm.continueUnitsSystemAlertClicked">Continue</button>
+            <button class="btn btn-inverse" data-bind="click: planningVm.cancelUnitsSystemAlertClicked">Cancel</button>
+        </div>
+    </div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row">
+    <div class="span6">
+        <h4 class="plan-question">2. How high is your ceiling?</h4>
+    </div>
+</div>
+<div class="row control-group" data-bind="css: { 'error': !wallsVm.height.isValid() }">
+    <div class="span7 plan-offset1">
+        <div id="CeilingHeight" class="inline-container" data-bind="measurement: {
+    unitsSystem: 'planningVm.unitsSystem',
+    observable: 'wallsVm.height',
+    metric: [{ label: 'cm', subObservable: 'wallsVm.heightInput.cm' }],
+    imperial: [{ label: 'ft', subObservable: 'wallsVm.heightInput.ft' }, { label: 'in', subObservable: 'wallsVm.heightInput.in' }]
+}">
+        </div>
+        <div class="errors-container" style="width:400px;">
+            <span class="field-validation-valid" data-bind="css: { 'field-validation-valid': wallsVm.height.isValid(), 'field-validation-error': !wallsVm.height.isValid() }, text: wallsVm.height.validationMessage"></span>
+        </div>
+    </div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row">
+    <div class="span6">
+        <h4 class="plan-question" data-bind="text: traceEstimateVm.floorPlanQuestion"></h4>
+    </div>
+</div>
+<div class="row">
+    <div class="span6 plan-offset1">
+        <div class="btn-group" id="floorplanButtonGroup" data-toggle="buttons-radio">
+            <div class="row">
+                <div class="span2 btn-container">
+                    <a class="btn btn-primary" id="uploadFloorPlan" data-bind="click: traceEstimateVm.uploadFloorPlanClicked">Yes, I do!</a>
+                </div>
+                <div class="span3 info-container">
+                    <i>Upload <strong>jpg</strong> or <strong>png</strong> format as the background</i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span2 btn-container">
+                    <a class="btn btn-primary" id="withoutFloorPlan" data-bind="click: traceEstimateVm.withoutFloorPlanClicked">No, I don't.</a>
+                </div>
+                <div class="span3 info-container">
+                    <i>Start tracing walls with <strong>grid lines</strong> in the background.</i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span2 btn-container">
+                    <a class="btn btn-primary" id="sampleFloorPlan" data-bind="click: traceEstimateVm.sampleFloorPlanClicked">Try a demo</a>
+                </div>
+                <div class="span3 info-container">
+                    <i>Use a <strong>sample floorplan</strong> to trace the wall.</i>
+                </div>
+            </div>
+        </div>
+        <div class="errors-container">
+            <span class="field-validation-valid" data-bind="css: { 'field-validation-valid': traceEstimateVm.lastFloorPlanSelection.isValid(), 'field-validation-error': !traceEstimateVm.lastFloorPlanSelection.isValid() }, text: traceEstimateVm.lastFloorPlanSelection.validationMessage"></span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span8 plan-offset1" data-bind="slideVisible: traceEstimateVm.uploadFloorPlanSectionIsVisible() === true">
+        <input type="file" name="files[]" id="fileupload" data-url="/api/file/floorplan/" />
+        <span id="fileuploading-span" data-bind="visible: traceEstimateVm.isUploadingFloorPlan" style="display: none;">Uploading</span>
+        <span class="loading" data-bind="visible: traceEstimateVm.isUploadingFloorPlan" style="display: none;"></span>
+        <span data-bind="visible: traceEstimateVm.floorPlanIsUploaded() === true && traceEstimateVm.isUploadingFloorPlan() !== true" style="color: #35aa47; font-size: 1.8em"><i class="icon-ok"></i></span>
+    </div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row">
+    <div class="span5 plan-offset1">
+        <div id="floorplanAlert" class="alert fade in" style="display: none;">
+            <button type="button" class="close" data-bind="click: traceEstimateVm.cancelFloorPlanAlertClicked">×</button>
+            <h4 class="alert-heading bold-text">Watch out! </h4>
+            <p>This will delete all the tracing that you have done. </p>
+            <button class="btn btn-danger" data-bind="click: traceEstimateVm.continueFloorPlanAlertClicked">Continue</button>
+            <button class="btn btn-inverse" data-bind="click: traceEstimateVm.cancelFloorPlanAlertClicked">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div class="row plan-seperator"></div>
+<div>
+    <div data-bind="slideVisible: traceEstimateVm.wallSectionIsVisible">
+        <div class="row">
+            <div class="span4">
+                <h4 class="plan-question">4. Use your mouse to trace the walls</h4>
+            </div>
+            <div class="span3">
+                <div class="errors-container">
+                    <h4 class="field-validation-valid" data-bind="css: { 'field-validation-valid': traceEstimateVm.pseudoTraceWall.isValid(), 'field-validation-error': !traceEstimateVm.pseudoTraceWall.isValid() }, text: traceEstimateVm.pseudoTraceWall.validationMessage"></h4>
+                </div>
+            </div>
+        </div>              
+        <div class="row">
+            <div class="span9 plan-offset1">
+                <div class="btn-group" id="tracerButtonGroup" data-toggle="buttons-radio">
+                    <div class="row">
+                        <div class="span2 btn-container">
+                            <a class="btn btn-danger" data-bind="click: traceEstimateVm.exteriorWallClicked">Exterior Wall</a>
+                        </div>
+                        <div class="span3 info-container">
+                            <i>Click to trace walls around a building. Join the last wall to the first one to complete trace.</i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span2 btn-container">
+                            <a class="btn btn-success" data-bind="click: traceEstimateVm.internalWallClicked">Internal Wall</a>
+                        </div>
+                        <div class="span3 info-container">
+                            <i>Click to trace walls inside a building.</i>
+                        </div>
+                    </div>                
+                </div>
+                <div style="height: 0">
+                    <div class="popover fade right" id="wallTypePopOver" data-bind="css: { in: traceEstimateVm.wallTypePopOverIsVisible }">
+                        <div class="arrow"></div>
+                        <div class="popover-content">Select a type of wall to start tracing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" data-bind="slideVisible: traceEstimateVm.tracerSectionIsVisible">
+        <div class="span9 plan-offset1">
+            <a class="m-btn black pull-right" id="tracerUndo" data-bind="click: tracer.undo"><i class="icon-undo"></i>Undo</a>
+            <div id="tracer" tabindex="0" data-bind="css: { 'error-border': !traceEstimateVm.pseudoTraceWall.isValid() }"></div>
+        </div>
+    </div>
+</div>
+<div class="row plan-seperator"></div>
+<div class="row plan-seperator"></div>

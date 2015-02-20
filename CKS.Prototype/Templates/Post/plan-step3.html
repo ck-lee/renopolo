@@ -1,0 +1,183 @@
+﻿<div class="row">
+    <div class="span6 plan-subtitle">
+        <h4>Adjustments</h4>
+    </div>
+</div>
+<div data-bind="visible: traceEstimateVm.exteriorWalls().length > 0 " class="margin-top-20px measurements red clearfix">
+    <div class="row">
+        <div class="span6">
+            <h4 class="plan-question">1. Exterior Wall Adjustments</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span9">
+            <div class="row" style="text-align: right;">
+                <div class="span2 plan-question">
+                    Adjustments
+                </div>
+                <div class="span2 plan-question">
+                    Quantity
+                </div>
+                <div class="span2 plan-question">
+                    Size
+                </div>
+                <div class="span2 plan-question">
+                    Total
+                </div>
+                <div class="span1"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="adjustment-table span9" data-bind="foreach: wallsVm.exteriorAdjustments">
+            <div class="row" style="display: none;" data-bind="slideVisible: !editRowIsVisible()">
+                <div class="span2" data-bind="text: selectedTypeText"></div>
+                <div class="span2" data-bind="text: totalIsCalculated() ? count() : ''"></div>
+                <div class="span2" data-bind="text: totalIsCalculated() ? getAreaDisplay(sizeInSqM()) : ''"></div>
+                <div class="span2" data-bind="text: getAreaDisplay(totalSizeInSqM())"></div>
+                <div class="span1">
+                    <i class="icon-pencil hand-cursor" style="margin: 5px;" data-bind="click: viewRowClicked"></i>
+                    <i class="icon-trash hand-cursor" style="margin: 5px;" data-bind="click: $parent.wallsVm.removeExteriorAdjustmentClicked"></i>
+                </div>
+            </div>
+            <div class="row edit" data-bind="slideVisible: editRowIsVisible">
+                <div class="span2">
+                    <select class="adjustment" style="width: 170px;" data-bind="options: $parent.wallsVm.exteriorAdjustmentsSelection, optionsValue: 'value', optionsText: 'text', value: selectedType, select2: {}"></select>
+                </div>
+                <div class="span2">
+                    <input class="width-30px" type="text" data-bind="value: count, disable: totalSizeInputIsFocused, click: calculatedInputClicked" />
+                </div>
+                <div class="inline-container span2" data-bind="measurement: {
+    unitsSystem: 'planningVm.unitsSystem',
+    observable: 'pseudoSize',
+    metric: [{ label: 'm²', subObservable: 'sizeInput.sqM', koBind: 'disable: totalSizeInputSqMIsFocused, click: calculatedInputClicked' }],
+    imperial: [{ label: 'sq ft', subObservable: 'sizeInput.sqFt', koBind: 'disable: totalSizeInputSqFtIsFocused, click: calculatedInputClicked' }]
+}">
+                </div>
+                <div class="inline-container span2" data-bind="measurement: {
+    unitsSystem: 'planningVm.unitsSystem',
+    observable: 'wallsVm.pseudoTotalSize',
+    metric: [{ label: 'm²', subObservable: 'totalSizeInput.sqM', koBind: 'hasfocus: totalSizeInputSqMIsFocused' }],
+    imperial: [{ label: 'sq ft', subObservable: 'totalSizeInput.sqFt', koBind: 'hasfocus: totalSizeInputSqFtIsFocused' }]
+}">
+                </div>
+                <div class="span1">
+                    <i class="icon-ok hand-cursor" style="margin: 5px;" data-bind="click: editCancelClicked"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row add hand-cursor" data-bind="click: wallsVm.addExteriorAdjusmentClicked">
+        <div class="span2"></div>
+        <div class="span2"></div>
+        <div class="span2"></div>
+        <div class="span2">
+            <span class="italic" style="color: #dddddd;">Add new adjustment</span>
+        </div>
+        <div class="span1">
+            <i class="icon-plus" style="visibility: hidden;"></i>
+        </div>
+    </div>
+</div>
+<div data-bind="visible: traceEstimateVm.internalWalls().length > 0 " class="margin-top-30px measurements green clearfix">
+    <div class="row">
+        <div class="span6">
+            <h4 class="plan-question">2. Internal Wall Adjustments</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span5 plan-offset1 bold-text">
+            <h4 class="plan-question">Calculate internal area for both side of the wall?</h4>
+        </div>
+    </div>
+    <div class="btn-group" data-toggle="buttons-radio">
+        <div class="row plan-offset1">
+            <div class="span3 btn-container">
+                <a class="btn btn-primary active" data-bind="click: wallsVm.doubleSurfaceAreaYesClicked">Yes, both side</a>
+            </div>
+            <div class="span3 info-container">
+                <i>surface area for front and back of a wall</i>
+            </div>
+        </div>
+        <div class="row plan-offset1"> 
+            <div class="span3 btn-container">
+                <a class="btn btn-primary" data-bind="click: wallsVm.doubleSurfaceAreaNoClicked">No, one side only</a>
+            </div>
+            <div class="span3 info-container">
+                <i>area of a wall itself</i>
+            </div>
+        </div>
+    </div>
+    <div class="row plan-seperator"></div>
+    <div class="row">
+        <div class="span9">
+            <div class="row" style="text-align: right;">
+                <div class="span2 plan-question">
+                    Adjustments
+                </div>
+                <div class="span2 plan-question">
+                    Quantity
+                </div>
+                <div class="span2 plan-question">
+                    Size
+                </div>
+                <div class="span2 plan-question">
+                    Total
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="adjustment-table span9" data-bind="foreach: wallsVm.internalAdjustments">
+            <div class="row" style="display: none" data-bind="slideVisible: !editRowIsVisible()">
+                <div class="span2" data-bind="text: selectedTypeText"></div>
+                <div class="span2" data-bind="text: totalIsCalculated() ? count() : ''"></div>
+                <div class="span2" data-bind="text: totalIsCalculated() ? getAreaDisplay(sizeInSqM()) : ''"></div>
+                <div class="span2" data-bind="text: getAreaDisplay(totalSizeInSqM())"></div>
+                <div class="span1">
+                    <i class="icon-pencil hand-cursor" style="margin: 5px;" data-bind="click: viewRowClicked"></i>
+                    <i class="icon-trash hand-cursor" style="margin: 5px;" data-bind="click: $parent.wallsVm.removeInternalAdjustmentClicked"></i>
+                </div>
+            </div>
+            <div class="row edit" data-bind="slideVisible: editRowIsVisible">
+                <div class="span2">
+                    <select class="adjustment" style="width: 170px;" data-bind="options: $parent.wallsVm.internalAdjustmentsSelection, optionsValue: 'value', optionsText: 'text', value: selectedType, select2: {}"></select>
+                </div>
+                <div class="span2">
+                    <input class="width-30px" type="text" data-bind="value: count, disable: totalSizeInputIsFocused, click: calculatedInputClicked" />
+                </div>
+                <div class="inline-container span2" data-bind="measurement: {
+    unitsSystem: 'planningVm.unitsSystem',
+    observable: 'pseudoSize',
+    metric: [{ label: 'm²', subObservable: 'sizeInput.sqM', koBind: 'disable: totalSizeInputSqMIsFocused, click: calculatedInputClicked' }],
+    imperial: [{ label: 'sq ft', subObservable: 'sizeInput.sqFt', koBind: 'disable: totalSizeInputSqFtIsFocused, click: calculatedInputClicked' }]
+}">
+                </div>
+                <div class="inline-container span2" data-bind="measurement: {
+    unitsSystem: 'planningVm.unitsSystem',
+    observable: 'wallsVm.pseudoTotalSize',
+    metric: [{ label: 'm²', subObservable: 'totalSizeInput.sqM', koBind: 'hasfocus: totalSizeInputSqMIsFocused' }],
+    imperial: [{ label: 'sq ft', subObservable: 'totalSizeInput.sqFt', koBind: 'hasfocus: totalSizeInputSqFtIsFocused' }]
+}">
+                </div>
+                <div class="span1">
+                    <i class="icon-ok hand-cursor" style="margin: 5px;" data-bind="click: editCancelClicked"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row add hand-cursor" data-bind="click: wallsVm.addInternalAdjusmentClicked">
+        <div class="span2"></div>
+        <div class="span2"></div>
+        <div class="span2"></div>
+        <div class="span2">
+            <span class="italic" style="color: #dddddd;">Add new adjustment</span>
+        </div>
+        <div class="span1">
+            <i class="icon-plus" style="visibility: hidden;"></i>
+        </div>
+    </div>
+
+</div>
