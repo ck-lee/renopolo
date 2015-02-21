@@ -13,7 +13,7 @@ Check out [www.renopolo.com](http://www.renopolo.com)
 ####Lot's of goodies for code reference...
 
 
-* Single Page Application using [KnockoutJS](http://knockoutjs.com/), [SammyJS](http://sammyjs.org/) for Routing, [raphael](http://raphaeljs.com/) for canvas drawing/tracing
+* Single Page Application using [Knockout](http://knockoutjs.com/), [Sammy](http://sammyjs.org/) for Routing, [raphael](http://raphaeljs.com/) for canvas drawing/tracing
 * [Azure SQL](http://azure.microsoft.com/en-us/services/sql-database/) and [Azure Blob Storage](http://azure.microsoft.com/en-us/documentation/services/storage/) with Unit of Work & Repository Pattern
 * Code First Entity Framework with Migration
 * SOLID code
